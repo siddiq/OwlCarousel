@@ -803,7 +803,7 @@ if (typeof Object.create !== "function") {
                                   "; transform:"         + translate3D;
             regex = /translate3d\(0px, 0px, 0px\)/g;
             asSupport = tempElem.style.cssText.match(regex);
-            support3d = (asSupport !== null && asSupport.length >= 1 && asSupport.length <= 2);
+            support3d = (asSupport !== null && asSupport.length === 1);
 
 
 
